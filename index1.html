@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title></title>
+
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media_style.css">
+
+	<script src="js/jquery-3.7.1.min.js"></script>
+
+	<link href="./libs/slick/slick.css" rel="stylesheet">
+	<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<link href="./css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+
+	<header class="header">
+		<div class="header_top">
+			<div class="container">
+				<div class="header_top_wrap">
+					<div class="header_top_menu">
+						<a href="">Бренды</a>
+						<a href="">Акции</a>
+						<a href="">Магазины</a>
+						<a href="">Пользователям</a>
+					</div>
+					<div class="header_top_contacts">
+						<a class="addr" href="#">Нижний Новгород</a>
+						<a class="phone" href="tel:">8 (800) 700 83 23</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header_wrapper">
+			<div class="container">
+				<div class="header_wrap">
+					<div class="header_logo">
+						<a href="#">
+							<img src="./img/logo.svg" alt="">
+						</a>
+					</div>
+
+					<div class="menu_btn">
+						<div>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<p>Каталог</p>
+					</div>
+
+					<div class="header_search">
+						<input type="text" placeholder="Поиск по сайту">
+						<button class="submit"></button>
+					</div>
+
+					<a href="tel:" class="header_mob_phone"></a>
+				</div>
+
+				<div class="header_admin">
+					<a href="#" class="favourites">
+						<svg width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M13.0499 0.000241254C12.2796 0.0062885 11.5196 0.182242 10.821 0.516242C10.1223 0.850242 9.50141 1.33453 9 1.93645C8.49859 1.33453 7.87765 0.850242 7.17904 0.516242C6.48042 0.182242 5.72037 0.0062885 4.95011 0.000241254C4.29831 -0.00631954 3.65178 0.120994 3.04836 0.374733C2.44493 0.628472 1.89673 1.00354 1.43581 1.478C0.9749 1.95245 0.610535 2.51676 0.364038 3.13792C0.117541 3.75907 -0.00613918 4.42459 0.000234369 5.09554C0.000234369 8.59739 3.06015 11.4508 7.69503 15.7864L9 17L10.305 15.7771C14.9398 11.4508 17.9998 8.59739 17.9998 5.09554C18.0061 4.42459 17.8825 3.75907 17.636 3.13792C17.3895 2.51676 17.0251 1.95245 16.5642 1.478C16.1033 1.00354 15.5551 0.628472 14.9516 0.374733C14.3482 0.120994 13.7017 -0.00631954 13.0499 0.000241254ZM9.09 14.406L9 14.4987L8.91 14.406C4.62611 10.4132 1.80019 7.77288 1.80019 5.09554C1.79007 4.66689 1.86463 4.24059 2.01935 3.84249C2.17407 3.44439 2.40572 3.08278 2.70025 2.77959C2.99479 2.4764 3.34608 2.23794 3.73282 2.07868C4.11956 1.91941 4.53369 1.84266 4.95011 1.85308C5.63415 1.8565 6.30239 2.06514 6.87304 2.45345C7.44368 2.84177 7.89196 3.39291 8.16302 4.03942H9.84598C10.1141 3.39265 10.5605 2.8409 11.1299 2.45235C11.6993 2.0638 12.3668 1.85546 13.0499 1.85308C13.4663 1.84266 13.8804 1.91941 14.2672 2.07868C14.6539 2.23794 15.0052 2.4764 15.2997 2.77959C15.5943 3.08278 15.8259 3.44439 15.9806 3.84249C16.1354 4.24059 16.2099 4.66689 16.1998 5.09554C16.1998 7.77288 13.3739 10.4132 9.09 14.406Z" fill="#8E7D82"/>
+						</svg>
+						<span>Избранное</span>
+					</a>
+					<a href="#" class="admin">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M8.5 0C6.81886 0 5.17547 0.498516 3.77766 1.43251C2.37984 2.3665 1.29037 3.69402 0.647028 5.24719C0.00368284 6.80036 -0.164645 8.50943 0.163329 10.1583C0.491303 11.8071 1.30085 13.3217 2.4896 14.5104C3.67834 15.6992 5.1929 16.5087 6.84173 16.8367C8.49057 17.1646 10.1996 16.9963 11.7528 16.353C13.306 15.7096 14.6335 14.6202 15.5675 13.2223C16.5015 11.8245 17 10.1811 17 8.5C16.999 6.24595 16.1032 4.08451 14.5093 2.49066C12.9155 0.896808 10.754 0.000965433 8.5 0ZM4.31057 13.8388C4.67487 13.0738 6.90346 12.326 8.5 12.326C10.0965 12.326 12.3333 13.0738 12.6894 13.8388C11.4978 14.7844 10.0213 15.2991 8.5 15.2991C6.97873 15.2991 5.50221 14.7844 4.31057 13.8388ZM13.9071 12.6066C12.6913 11.1275 9.74226 10.6257 8.50091 10.6257C7.25956 10.6257 4.31148 11.1275 3.09472 12.6066C2.32562 11.5987 1.85356 10.396 1.7318 9.13408C1.61005 7.87217 1.84346 6.60136 2.40568 5.46508C2.96791 4.3288 3.83656 3.3723 4.91359 2.70355C5.99062 2.0348 7.23315 1.68042 8.50091 1.68042C9.76868 1.68042 11.0112 2.0348 12.0882 2.70355C13.1653 3.3723 14.0339 4.3288 14.5961 5.46508C15.1584 6.60136 15.3918 7.87217 15.27 9.13408C15.1483 10.396 14.6762 11.5987 13.9071 12.6066ZM8.5 3.39982C7.91152 3.39982 7.33626 3.57432 6.84695 3.90126C6.35765 4.22821 5.97628 4.6929 5.75108 5.23659C5.52588 5.78027 5.46696 6.37853 5.58176 6.9557C5.69657 7.53287 5.97995 8.06304 6.39607 8.47916C6.81219 8.89528 7.34236 9.17866 7.91953 9.29346C8.4967 9.40827 9.09496 9.34935 9.63864 9.12415C10.1823 8.89894 10.647 8.51758 10.974 8.02828C11.3009 7.53897 11.4754 6.96371 11.4754 6.37523C11.4765 5.98419 11.4003 5.59679 11.2511 5.23531C11.102 4.87383 10.8829 4.54539 10.6063 4.26888C10.3298 3.99237 10.0014 3.77325 9.63992 3.6241C9.27844 3.47496 8.89104 3.39874 8.5 3.39982ZM8.5 7.65027C8.24782 7.65027 8.0013 7.57549 7.79162 7.43539C7.58194 7.29528 7.41852 7.09615 7.32201 6.86317C7.22551 6.63018 7.20026 6.37381 7.24946 6.12648C7.29865 5.87914 7.42009 5.65195 7.59841 5.47363C7.77673 5.29532 8.00392 5.17388 8.25125 5.12468C8.49859 5.07548 8.75496 5.10073 8.98794 5.19724C9.22093 5.29374 9.42006 5.45717 9.56016 5.66685C9.70027 5.87653 9.77505 6.12305 9.77505 6.37523C9.77505 6.54267 9.74207 6.70847 9.67799 6.86317C9.61391 7.01786 9.51999 7.15842 9.4016 7.27682C9.2832 7.39522 9.14264 7.48914 8.98794 7.55321C8.83325 7.61729 8.66744 7.65027 8.5 7.65027Z" fill="#8E7D82"/>
+						</svg>
+						<span>Профиль</span>
+					</a>
+					<a href="#" class="cart">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.3643 9.34987C12.6678 9.35086 12.966 9.27014 13.2276 9.11617C13.4892 8.96219 13.7045 8.74064 13.851 8.47476L16.8936 2.95837C16.9651 2.82952 17.0018 2.68424 16.9999 2.53689C16.9981 2.38953 16.9579 2.2452 16.8832 2.11817C16.8085 1.99114 16.702 1.8858 16.5741 1.81257C16.4463 1.73934 16.3015 1.70075 16.1542 1.70062H3.57743L2.7787 0H0V1.69973H1.69928L4.75869 8.1488L3.60753 10.2232C3.46508 10.4822 3.39246 10.7738 3.3968 11.0693C3.40114 11.3649 3.48229 11.6542 3.63229 11.9089C3.78228 12.1635 3.99594 12.3748 4.25228 12.5218C4.50861 12.6689 4.79879 12.7467 5.09429 12.7476H15.2962V11.0496H5.09872L6.03381 9.34987H12.3643ZM4.385 3.40035H14.71L12.3643 7.6519H6.39864L4.385 3.40035ZM5.09872 13.6005C4.76263 13.6005 4.4341 13.7002 4.15465 13.887C3.87521 14.0738 3.65741 14.3392 3.52879 14.6498C3.40018 14.9604 3.36653 15.3022 3.43209 15.6319C3.49766 15.9616 3.6595 16.2644 3.89715 16.5022C4.1348 16.7399 4.43758 16.9018 4.76721 16.9673C5.09683 17.0329 5.4385 16.9993 5.749 16.8706C6.05951 16.742 6.3249 16.5241 6.51162 16.2446C6.69834 15.9651 6.798 15.6364 6.798 15.3003C6.79835 15.0769 6.75464 14.8557 6.66938 14.6493C6.58412 14.4428 6.45897 14.2553 6.30112 14.0973C6.14327 13.9393 5.95581 13.814 5.74949 13.7286C5.54316 13.6432 5.32201 13.6003 5.09872 13.6005ZM13.5995 13.6005C13.2635 13.6005 12.9349 13.7002 12.6555 13.887C12.376 14.0738 12.1582 14.3392 12.0296 14.6498C11.901 14.9604 11.8673 15.3022 11.9329 15.6319C11.9985 15.9616 12.1603 16.2644 12.398 16.5022C12.6356 16.7399 12.9384 16.9018 13.268 16.9673C13.5977 17.0329 13.9393 16.9993 14.2498 16.8706C14.5603 16.742 14.8257 16.5241 15.0124 16.2446C15.1992 15.9651 15.2988 15.6364 15.2988 15.3003C15.2992 15.0766 15.2553 14.8551 15.1699 14.6484C15.0844 14.4418 14.9589 14.254 14.8007 14.096C14.6425 13.938 14.4546 13.8128 14.2478 13.7276C14.0411 13.6424 13.8196 13.5989 13.596 13.5996L13.5995 13.6005Z" fill="#8E7D82"/>
+						</svg>
+						<span>Корзина</span>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="menu_wrap">
+			<div class="container">
+				<div class="menu">
+					<a href="">Распродажа</a>
+					<a href="">Игрушки для секса</a>
+					<a href="">Эротические подарки</a>
+					<a href="">Интимная косметика</a>
+					<a href="">BDSM</a>
+					<a href="">Эротическая одежда</a>
+					<a href="">Возбуждающие препараты</a>
+					<a href="">Презервативы</a>
+					<a href="">Интимная  гигиена</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="menu_wrapper">
+		<div class="container">
+			<div class="menu_btn_close">
+				<div>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<ul class="menu_nav">
+
+				<li class="menu_nav_addr">
+					Нижний Новгород
+				</li>
+
+				<div class="header_search header_search_menu">
+					<input type="text" placeholder="Поиск по сайту">
+					<button class="submit"></button>
+				</div>
+				
+				<li class="menu_nav_tabs">
+					<a href="#" class="active">Каталог</a>
+					<a href="#">Информация</a>
+				</li>
+
+
+				<li class="menu_nav_top active" menu-nav="1">
+					<a href="#" class="menu_nav_btn ico1">Распродажа</a>
+
+					<div class="menu_nav_list active" menu-nav="1">
+						<ul>
+							<li>
+								<a href="#"><b>Анальные игрушки</b></a>
+								<a href="#">Анальные пробки</a>
+								<a href="#">Анальные расширители</a>
+								<a href="#">Анальные шарики</a>
+								<a href="#">Массажеры простаты</a>
+							</li>
+							<li>
+								<a href="#"><b>Вакуумные помпы</b></a>
+								<a href="#">Помпы для женщин</a>
+								<a href="#">Помпы для мужчин</a>
+							</li>
+							<li>
+								<a href="#"><b>Вибраторы</b></a>
+								<a href="#">Вибраторы</a>
+								<a href="#">Вибраторы для пар</a>
+								<a href="#">Виброяйца</a>
+								<a href="#">Массажеры Wand</a>
+								<a href="#">Стимуляторы клитора</a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#"><b>Мастурбаторы</b></a>
+								<a href="#">Мастурбаторы</a>
+								<a href="#">Автоматические мастурбаторы</a>
+							</li>
+							<li>
+								<a href="#"><b>Насадки и кольца</b></a>
+								<a href="#">Для двойного проникновения</a>
+								<a href="#">Насадки на пальцы и язык</a>
+								<a href="#">Насадки на член</a>
+								<a href="#">Эрекционные кольца</a>
+							</li>
+							<li>
+								<a href="#"><b>Секс-куклы</b></a>
+								<a href="#">Надувные секс-куклы</a>
+								<a href="#">Real Doll</a>
+							</li>
+							<li>
+								<a href="#"><b>Секс-машины</b></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#"><b>Страпоны</b></a>
+							</li>
+							<li>
+								<a href="#"><b>Тренажеры интимных мышц</b></a>
+								<a href="#">Тренажеры Кегеля</a>
+								<a href="#">Вагинальные шарики</a>
+							</li>
+							<li>
+								<a href="#"><b>Уход за игрушками</b></a>
+							</li>
+							<li>
+								<a href="#"><b>Фаллоимитаторы</b></a>
+							</li>
+							<li>
+								<a href="#"><b>Фаллопротезы</b></a>
+							</li>
+							<li>
+								<a href="#"><b>Фистинг</b></a>
+							</li>
+						</ul>
+						<ul>
+							<li>
+								<a href="#"><b>Экстендеры</b></a>
+							</li>
+							<li>
+								<a href="#"><b>Электростимуляция</b></a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="2">
+					<a href="#" class="menu_nav_btn ico2">Новое поступление</a>
+
+					<div class="menu_nav_list" menu-nav="2">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="3">
+					<a href="#" class="menu_nav_btn ico3">Популярное</a>
+
+					<div class="menu_nav_list" menu-nav="3">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="4">
+					<a href="#" class="menu_nav_btn ico4">Игрушки для секса</a>
+
+					<div class="menu_nav_list" menu-nav="4">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="5">
+					<a href="#" class="menu_nav_btn ico5">Эротические подарки</a>
+
+					<div class="menu_nav_list" menu-nav="5">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="6">
+					<a href="#" class="menu_nav_btn ico6">Интимная косметика</a>
+
+					<div class="menu_nav_list" menu-nav="6">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="7">
+					<a href="#" class="menu_nav_btn ico7">BDSM</a>
+
+					<div class="menu_nav_list" menu-nav="7">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="8">
+					<a href="#" class="menu_nav_btn ico8">Эротическая одежда</a>
+
+					<div class="menu_nav_list" menu-nav="8">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="9">
+					<a href="#" class="menu_nav_btn ico9">Возбуждающие препараты</a>
+
+					<div class="menu_nav_list" menu-nav="9">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="10">
+					<a href="#" class="menu_nav_btn ico10">Презервативы</a>
+
+					<div class="menu_nav_list" menu-nav="10">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="11">
+					<a href="#" class="menu_nav_btn ico11">Интимная гигиена</a>
+
+					<div class="menu_nav_list" menu-nav="11">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="menu_nav_top" menu-nav="12">
+					<a href="#" class="menu_nav_btn ico12">Наборы</a>
+
+					<div class="menu_nav_list" menu-nav="12">
+						<ul>
+							<li>
+								<a href="#"><b>item</b></a>
+								<a href="#">item1</a>
+								<a href="#">item2</a>
+								<a href="#">item3</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
+	<section class="menu_catalog">
+		<div class="container">
+			<div class="menu_catalog_wrap">
+				<a href="#" class="menu_catalog_item">
+					<div class="menu_catalog_img">
+						<img src="./img/menu_catalog/1.png" alt="">
+					</div>
+					<span>Акции</span>
+				</a>
+				<a href="#" class="menu_catalog_item">
+					<div class="menu_catalog_img">
+						<img src="./img/menu_catalog/2.png" alt="">
+					</div>
+					<span>BDSM</span>
+				</a>
+				<a href="#" class="menu_catalog_item">
+					<div class="menu_catalog_img">
+						<img src="./img/menu_catalog/3.png" alt="">
+					</div>
+					<span>Секс-игрушки</span>
+				</a>
+				<a href="#" class="menu_catalog_item">
+					<div class="menu_catalog_img">
+						<img src="./img/menu_catalog/4.png" alt="">
+					</div>
+					<span>Косметика</span>
+				</a>
+				<a href="#" class="menu_catalog_item">
+					<div class="menu_catalog_img">
+						<img src="./img/menu_catalog/5.png" alt="">
+					</div>
+					<span>Обзоры белья</span>
+				</a>
+				<a href="#" class="menu_catalog_item">
+					<div class="menu_catalog_img">
+						<img src="./img/menu_catalog/6.png" alt="">
+					</div>
+					<span>Магазины</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="banner">
+		<div class="container">
+			<div class="banner_slider">
+				<div class="banner_item">
+					<div class="banner_title">
+						<div class="title1">
+							Курсовой прием - <br>
+							длительный результат
+						</div>
+						<div class="title2">
+							Концентраты "Loveboost" <br>
+							для повышения либидо
+						</div>
+						<a class="banner_btn btn-outline wow animated end" href="" style="visibility: visible;">
+							<svg xmlns="http://www.w3.org/2000/svg" width="290.051" height="142.112" viewBox="0 0 290.051 142.112">
+								<g transform="translate(-7557.568 224.75)" fill="none">
+									<path class="path-3" style="opacity: 0" d="M193.968,8.048c14.831,1.6,29.231,6.506,41.393,11.111s23.453,10.592,31.581,16.518S280.808,48.01,284.13,54.718s4.659,14.233,2.74,21.207-7.312,13.856-14.253,20.639-16.3,14.876-27.393,20.061-24.968,8.085-39.18,11.053-30.481,5.81-46.1,6.752a264.417,264.417,0,0,1-47.6-1.1c-15.113-1.911-30.1-6.374-43.084-10.362S44.106,114.7,34.422,109.4,16.324,98.19,11.165,91.188a41.223,41.223,0,0,1-7.7-23.8c.15-7.4,3.328-14.066,8.6-20.617A77.787,77.787,0,0,1,35.077,28.079C45.061,22.567,58.469,17.5,71.966,13.7a240.863,240.863,0,0,1,44.092-8.463c15.252-1.3,33.2-.149,47.42.667s30.649,3.25,37.91,4.229,6.759.635,5.657,1.642M134.638,3.112c14.853-1.265,32.75,3.426,47.969,5.165s30.509,1.75,43.347,5.27,24.368,10.12,33.678,15.849,17.42,11.258,22.179,18.524a42.359,42.359,0,0,1,6.374,25.073,37.343,37.343,0,0,1-10.324,22c-5.864,6.19-14.514,10.4-24.862,15.139a280.148,280.148,0,0,1-37.228,13.294c-13.5,3.893-28.725,8.112-43.773,10.062s-31,3.047-46.519,1.64S92.8,128.949,78.906,125.042s-26.434-8.074-36.8-13.358A103.1,103.1,0,0,1,16.727,93.339C10.464,87.1,5.9,81.177,4.53,74.253A32.989,32.989,0,0,1,8.489,51.79c4.131-6.937,11.856-13.214,20.827-19.157a146.311,146.311,0,0,1,33-16.5c12.5-4.236,29.88-7.161,42.018-8.918s25.724-1.56,30.81-1.622-.314.2-.293,1.246" transform="translate(7556.344 -223.495) rotate(3)"></path><path class="path-4" style="opacity: 0" d="M89.469,6.786c12.952-3.871,30.624-4.694,46.2-5.732S167.924-.437,182.912.56s30.115,2.888,42.683,6.478S249.64,16.682,258.32,22.1s15.629,10.965,19.356,17.427,4.311,14.632,3,21.347-4.673,12.76-10.853,18.941S254.3,92.47,243.6,97.959a204.225,204.225,0,0,1-37.988,14.786c-13.883,3.815-29.654,5.989-45.309,8.1s-33.3,4.781-48.618,4.574-30.124-2.76-43.294-5.82a181.088,181.088,0,0,1-35.725-12.539c-9.9-4.708-18.213-9.437-23.657-15.71S.175,76.408.008,69.423s2.975-13.282,8-19.982A78.913,78.913,0,0,1,30.171,29.227C39.916,23.389,55.784,18.4,66.477,14.415S88.825,6.461,94.331,5.288s4.446.978,5.18,2.088m-6.4,0c13.258-4.105,30.9-6.235,46.619-7.086s33.043.3,47.717,1.983,28.115,4.941,40.323,8.133,24.563,5.761,32.924,11.017S274.532,35.6,277.939,41.941s4.77,10.573,3.2,17.546-5.843,17.388-12.632,24.29-16.988,11.988-28.1,17.121a211.563,211.563,0,0,1-38.558,13.676,327.2,327.2,0,0,1-47.758,7.3c-15.481,1.255-30.179.706-45.126.229s-31.127-.234-44.553-3.093-26.574-9.24-36.006-14.059-16-8.7-20.587-14.853A36.061,36.061,0,0,1,.89,68.05c.355-7.345,3.429-15.1,9.061-22.016S24.678,31.816,34.68,26.543s25.438-9.094,35.286-12.148,19.744-5.313,23.8-6.177-.045.231.558.995" transform="translate(7558.618 -208.945) rotate(5)"></path><path class="path-1" d="M193.968,8.048c14.831,1.6,29.231,6.506,41.393,11.111s23.453,10.592,31.581,16.518S280.808,48.01,284.13,54.718s4.659,14.233,2.74,21.207-7.312,13.856-14.253,20.639-16.3,14.876-27.393,20.061-24.968,8.085-39.18,11.053-30.481,5.81-46.1,6.752a264.417,264.417,0,0,1-47.6-1.1c-15.113-1.911-30.1-6.374-43.084-10.362S44.106,114.7,34.422,109.4,16.324,98.19,11.165,91.188a41.223,41.223,0,0,1-7.7-23.8c.15-7.4,3.328-14.066,8.6-20.617A77.787,77.787,0,0,1,35.077,28.079C45.061,22.567,58.469,17.5,71.966,13.7a240.863,240.863,0,0,1,44.092-8.463c15.252-1.3,33.2-.149,47.42.667s30.649,3.25,37.91,4.229,6.759.635,5.657,1.642M134.638,3.112c14.853-1.265,32.75,3.426,47.969,5.165s30.509,1.75,43.347,5.27,24.368,10.12,33.678,15.849,17.42,11.258,22.179,18.524a42.359,42.359,0,0,1,6.374,25.073,37.343,37.343,0,0,1-10.324,22c-5.864,6.19-14.514,10.4-24.862,15.139a280.148,280.148,0,0,1-37.228,13.294c-13.5,3.893-28.725,8.112-43.773,10.062s-31,3.047-46.519,1.64S92.8,128.949,78.906,125.042s-26.434-8.074-36.8-13.358A103.1,103.1,0,0,1,16.727,93.339C10.464,87.1,5.9,81.177,4.53,74.253A32.989,32.989,0,0,1,8.489,51.79c4.131-6.937,11.856-13.214,20.827-19.157a146.311,146.311,0,0,1,33-16.5c12.5-4.236,29.88-7.161,42.018-8.918s25.724-1.56,30.81-1.622-.314.2-.293,1.246" transform="translate(7556.344 -223.495)"></path><path class="path-2" d="M89.469,6.786c12.952-3.871,30.624-4.694,46.2-5.732S167.924-.437,182.912.56s30.115,2.888,42.683,6.478S249.64,16.682,258.32,22.1s15.629,10.965,19.356,17.427,4.311,14.632,3,21.347-4.673,12.76-10.853,18.941S254.3,92.47,243.6,97.959a204.225,204.225,0,0,1-37.988,14.786c-13.883,3.815-29.654,5.989-45.309,8.1s-33.3,4.781-48.618,4.574-30.124-2.76-43.294-5.82a181.088,181.088,0,0,1-35.725-12.539c-9.9-4.708-18.213-9.437-23.657-15.71S.175,76.408.008,69.423s2.975-13.282,8-19.982A78.913,78.913,0,0,1,30.171,29.227C39.916,23.389,55.784,18.4,66.477,14.415S88.825,6.461,94.331,5.288s4.446.978,5.18,2.088m-6.4,0c13.258-4.105,30.9-6.235,46.619-7.086s33.043.3,47.717,1.983,28.115,4.941,40.323,8.133,24.563,5.761,32.924,11.017S274.532,35.6,277.939,41.941s4.77,10.573,3.2,17.546-5.843,17.388-12.632,24.29-16.988,11.988-28.1,17.121a211.563,211.563,0,0,1-38.558,13.676,327.2,327.2,0,0,1-47.758,7.3c-15.481,1.255-30.179.706-45.126.229s-31.127-.234-44.553-3.093-26.574-9.24-36.006-14.059-16-8.7-20.587-14.853A36.061,36.061,0,0,1,.89,68.05c.355-7.345,3.429-15.1,9.061-22.016S24.678,31.816,34.68,26.543s25.438-9.094,35.286-12.148,19.744-5.313,23.8-6.177-.045.231.558.995" transform="translate(7558.618 -208.945)"></path>
+								</g>
+							</svg>
+							<span>КУПИТЬ</span>
+						</a>
+					</div>
+					<div class="banner_img">
+						<picture>
+							<source srcset="./img/banner/banner_img_mob.jpg" media="(max-width: 768px)" />
+							<img src="./img/banner/banner_img.jpg" alt="">
+						</picture>
+					</div>
+				</div>
+
+				<div class="banner_item">
+					<div class="banner_title">
+						<div class="title1">
+							Курсовой прием - <br>
+							длительный результат
+						</div>
+						<div class="title2">
+							Концентраты "Loveboost" <br>
+							для повышения либидо
+						</div>
+						<a href="#" class="banner_btn">КУПИТЬ</a>
+					</div>
+					<div class="banner_img">
+						<picture>
+							<source srcset="./img/banner/banner_img_mob.jpg" media="(max-width: 768px)" />
+							<img src="./img/banner/banner_img.jpg" alt="">
+						</picture>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="category1">
+		<div class="container">
+			<div class="section_item">
+				Все категории
+			</div>
+			<div class="category_wrapper">
+				<a href="#" class="category1_item category_item1">
+					<div class="category1_img">
+						<img src="./img/category1/1.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Игрушки <br> для секса</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item1">
+					<div class="category1_img">
+						<img src="./img/category1/2.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Эротические <br> подарки</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item2">
+					<div class="category1_img">
+						<img src="./img/category1/3.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Эротическая <br> одежда</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item1">
+					<div class="category1_img">
+						<img src="./img/category1/4.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Презервативы</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item1">
+					<div class="category1_img">
+						<img src="./img/category1/5.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Наборы</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item2">
+					<div class="category1_img">
+						<img src="./img/category1/6.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Интимная <br> косметика</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item1">
+					<div class="category1_img">
+						<img src="./img/category1/7.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>BDSM</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item1">
+					<div class="category1_img">
+						<img src="./img/category1/8.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Интимная <br> гигиена</span>
+					</div>
+				</a>
+				<a href="#" class="category1_item category_item2">
+					<div class="category1_img">
+						<img src="./img/category1/9.png" alt="">
+					</div>
+					<div class="category1_item_wrap">
+						<span>Возбуждающие <br> препараты</span>
+					</div>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="category2">
+		<div class="container">
+			<div class="category_wrapper">
+				<a href="#" class="category2_item">
+					<div class="category2_img">
+						<img src="./img/category2/1.png" alt="">
+					</div>
+					<span>Для неё</span>
+				</a>
+				<a href="#" class="category2_item">
+					<div class="category2_img">
+						<img src="./img/category2/2.png" alt="">
+					</div>
+					<span>Для него</span>
+				</a>
+				<a href="#" class="category2_item">
+					<div class="category2_img">
+						<img src="./img/category2/3.png" alt="">
+					</div>
+					<span>Для пар</span>
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="brands">
+		<div class="container">
+			<div class="section_item">
+				Популярные бренды
+			</div>
+			<div class="brands_wrapper">
+				<div class="brands_item">
+					<img src="./img/brands/1.png" alt="">
+					<img src="./img/brands/1_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/2.png" alt="">
+					<img src="./img/brands/2_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/3.png" alt="">
+					<img src="./img/brands/3_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/4.png" alt="">
+					<img src="./img/brands/4_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/5.png" alt="">
+					<img src="./img/brands/5_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/6.png" alt="">
+					<img src="./img/brands/6_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/7.png" alt="">
+					<img src="./img/brands/7_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/8.png" alt="">
+					<img src="./img/brands/8_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/9.png" alt="">
+					<img src="./img/brands/9_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/10.png" alt="">
+					<img src="./img/brands/10_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/11.png" alt="">
+					<img src="./img/brands/11_hov.png" alt="">
+				</div>
+				<div class="brands_item">
+					<img src="./img/brands/12.png" alt="">
+					<img src="./img/brands/12_hov.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="catalog">
+		<div class="container">
+			<div class="section_item">
+				Лучшие предложения
+			</div>
+
+			<div class="tabs_wrap">
+				<a href="#" class="active">Новые поступления</a>
+				<a href="#">Популярное</a>
+				<a href="#">Распродажа</a>
+			</div>
+
+			<div class="catalog_wraper">
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/1.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Unihorn</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Вибромассажер «Heart Throb» с пульсирующей головкой
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">8 990 ₽</span>
+						<span class="old_price">18 190</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/2.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Livia Corsetti Fashion</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Новогодний комплект «Alimena» (L/XL)
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">4 490 ₽</span>
+						<span class="old_price">5 190</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/3.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">ФлешНаш</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Мастурбатор вагина-анус «Misha Maver»
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">4 590 ₽</span>
+						<span class="old_price">5 190</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/4.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">ФлешНаш</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Мастурбатор вагина-анус «Lola Taylor»
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">4 590 ₽</span>
+						<span class="old_price">5 190</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/5.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">SHUNGA</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Очищающий спрей «Shunga Gentle Cleaner», 115 мл
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">1 890 ₽</span>
+						<span class="old_price">18 190</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/6.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Unihorn</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Новогодние купоны для пар «Загадай желание»
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">390 ₽</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/7.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Unihorn</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Вибромассажер «Bean Blossom» со стимуляцией
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">8 990 ₽</span>
+						<span class="old_price">18 190</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/8.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Unihorn</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Вибромассажер «Wild Spirit» с длинным язычком
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">8 990 ₽</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/9.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Unihorn</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Гиперреалистичная кукла «Sex Doll Lea» с голосовым...
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">8 990 ₽</span>
+					</div>
+				</a>
+				<a href="#" class="catalog_block">
+					<div class="catalog_block_head">
+						<span class="catalog_block_new">NEW</span>
+						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_benefit">-15%</span>
+
+						<button class="catalog_fav"></button>
+					</div>
+
+					<div class="catalog_block_img">
+						<img src="./img/catalog/10.png" alt="">
+						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
+					</div>
+
+
+
+					<div class="catalog_block_wrap">
+						<span class="catalog_block_category">Unihorn</span>
+						<span class="catalog_block_rating">4,8</span>
+					</div>
+
+					<div class="catalog_block_title">
+						Возбуждающее средство для мужчин «LoveBoost Extreme»...
+					</div>
+
+					<div class="catalog_block_price">
+						<span class="new_price">8 990 ₽</span>
+					</div>
+				</a>
+			</div>
+
+			<a href="#" class="btn all_news">
+				<span>все новинки</span>
+			</a>
+		</div>
+	</section>
+
+	<section class="articles">
+		<div class="container">
+			<div class="section_item">
+				Статьи
+			</div>
+
+			<div class="tabs_wrap">
+				<a href="#" class="active">Новое в блог</a>
+				<a href="#">Гид по товарам</a>
+			</div>
+
+			<div class="articles_wrapper">
+				<div class="articles_block">
+					<div class="articles_img">
+						<img src="./img/articles/1.png" alt="">
+					</div>
+					<div class="articles_title">
+						Любовь с первого нюха: феромоны
+					</div>
+					<div class="articles_wrap">
+						<span class="articles_time">1,5 МИН. НА ЧТЕНИЕ</span>
+						<span class="articles_date">28.03.24</span>
+					</div>
+				</div>
+				<div class="articles_block">
+					<div class="articles_img">
+						<img src="./img/articles/2.png" alt="">
+					</div>
+					<div class="articles_title">
+						Одежда из латекса и винила: особенности и свойства
+					</div>
+					<div class="articles_wrap">
+						<span class="articles_time">1,5 МИН. НА ЧТЕНИЕ</span>
+						<span class="articles_date">28.03.24</span>
+					</div>
+				</div>
+				<div class="articles_block">
+					<div class="articles_img">
+						<img src="./img/articles/3.png" alt="">
+					</div>
+					<div class="articles_title">
+						Крема и гели, сужающие вход во влагалище
+					</div>
+					<div class="articles_wrap">
+						<span class="articles_time">1,5 МИН. НА ЧТЕНИЕ</span>
+						<span class="articles_date">28.03.24</span>
+					</div>
+				</div>
+				<div class="articles_block">
+					<div class="articles_img">
+						<img src="./img/articles/4.png" alt="">
+					</div>
+					<div class="articles_title">
+						Спасательный круг для мужчин: эрекционные кольца
+					</div>
+					<div class="articles_wrap">
+						<span class="articles_time">1,5 МИН. НА ЧТЕНИЕ</span>
+						<span class="articles_date">28.03.24</span>
+					</div>
+				</div>
+				<div class="articles_block">
+					<div class="articles_img">
+						<img src="./img/articles/5.png" alt="">
+					</div>
+					<div class="articles_title">
+						Ваши вопросы о вагинальных шариках
+					</div>
+					<div class="articles_wrap">
+						<span class="articles_time">1,5 МИН. НА ЧТЕНИЕ</span>
+						<span class="articles_date">28.03.24</span>
+					</div>
+				</div>
+			</div>
+
+			<a href="#" class="btn all_articles">
+				<span>Перейти в блог</span>
+			</a>
+		</div>
+	</section>
+
+	<section class="advant">
+		<div class="container">
+			<div class="advant_wrapper">
+				<div class="advant_block">
+					<div class="advant_img">
+						<img src="./img/advant/1.jpg" alt="">
+					</div>
+
+					<div class="advant_title">
+						<b>Абсолютная анонимность</b>
+						<span>
+							Абсолютная анонимность заказа, потому что будет упакован в коробку.
+						</span>
+					</div>
+				</div>
+
+				<div class="advant_block">
+					<div class="advant_img">
+						<img src="./img/advant/2.jpg" alt="">
+					</div>
+
+					<div class="advant_title">
+						<b>Гарантия качества</b>
+						<span>
+							Мы за гарантию качества. Отбираем товары вручную и продаем только сертифицированную продукцию.
+						</span>
+					</div>
+				</div>
+
+				<div class="advant_block">
+					<div class="advant_img">
+						<img src="./img/advant/3.jpg" alt="">
+					</div>
+
+					<div class="advant_title">
+						<b>Скидки и предложения</b>
+						<span>
+							Скидки клиентам за подписку на нашу рассылку, чтобы получать новости о скидках и распродажах.
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="offers">
+		<div class="container">
+			<div class="offers_wrapper">
+				<b>Мы считаем, что секс – это больше, чем просто хорошее самочувствие. Дело в выборе. Вот почему мы создаем продукты для тех, кто знает, чего хочет, и не боится этого требовать.</b>
+				<span>
+					Каждый клиент заслуживает наше особое внимание, и не важно, сколько времени займет консультация.
+					Ассортимент наших товаров должен удовлетворять абсолютно любые ваши потребности и пожелания.
+					Насколько довольным своим приобретением останется покупатель зависит от того, насколько наш коллектив справился со своей
+					задачей. С таким же энтузиазмом мы будем продолжать совершенствоваться.
+				</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="offers2">
+		<div class="container">
+			<div class="offers2_wrapper">
+				<div class="offers2_logo">
+					<img src="./img/logo.svg" alt="">
+				</div>
+
+				<div class="offers2_wrap">
+					<div class="offers2_title">
+						Подпишитесь и получайте <br>
+						информацию о <span>скидках и акциях</span>
+					</div>
+
+					<form action="">
+						<input type="mail" placeholder="Email">
+						<button class="submit"></button>
+					</form>
+				</div>
+
+				<div class="offers2_img">
+					<img src="./img/offers2_img.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer_wrapper">
+				<div class="footer_contacts">
+					<a href="tel:" class="phone">8 (800) 700 83 23</a>
+					<a href="mailto:" class="mail">info@erolaif.ru</a>
+					
+					<div class="footer_contacts_social">
+						<span>Мессенджеры:</span>
+						<a href="#" class="watsapp"></a>
+						<a href="#" class="viber"></a>
+						<a href="#" class="telegram"></a>
+					</div>
+
+					<div class="footer_contacts_social">
+						<span>Социальные сети:</span>
+						<a href="#" class="vk"></a>
+						<a href="#" class="instagram"></a>
+						<a href="#" class="youtube"></a>
+					</div>
+				</div>
+				
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#">Игрушки для секса</a></li>
+						<li><a href="#">Эротические подарки</a></li>
+						<li><a href="#">Интимная косметика</a></li>
+						<li><a href="#">BDSM</a></li>
+						<li><a href="#">Сексуальная одежда</a></li>
+						<li><a href="#">Возбуждающие препараты</a></li>
+						<li><a href="#">Презервативы</a></li>
+						<li><a href="#">Наборы</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">О нас</a></li>
+						<li><a href="#">Вакансии</a></li>
+						<li><a href="#">Магазины</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+					<ul>
+						<li><a href="">Видео–консультация</a></li>
+						<li><a href="">Кредит и рассрочка</a></li>
+						<li><a href="">Блог</a></li>
+						<li><a href="">Гид по игрушкам</a></li>
+						<li><a href="">Отзывы</a></li>
+						<li><a href="">Доставка</a></li>
+						<li><a href="">Оплата</a></li>
+						<li><a href="">Анонимность</a></li>
+						<li><a href="">Вопрос–ответ</a></li>
+					</ul>
+					<ul>
+						<li><a href="#">Самовывоз</a></li>
+						<li><a href="#">Бонусная программа</a></li>
+						<li><a href="#">Подбор размера</a></li>
+						<li><a href="#">Гарантия и возврат</a></li>
+						<li><a href="#">Накопительная скидка</a></li>
+						<li><a href="#">Промокод</a></li>
+						<li><a href="#">Электронный сертификат</a></li>
+						<li><a href="#">Как сделать заказ</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="footer_bottom">
+				<div class="adult_materials">
+					На сайте присутствуют <br>
+					материалы для взрослых
+				</div>
+
+				<div class="footer_bottom_wrap">
+					<div class="footer_bottom_wrap_img">
+						<img src="./img/cards/1.png" alt="">
+					</div>
+					<div class="footer_bottom_wrap_img">
+						<img src="./img/cards/2.png" alt="">
+					</div>
+					<div class="footer_bottom_wrap_img">
+						<img src="./img/cards/3.png" alt="">
+					</div>
+				</div>
+
+				<div class="footer_bottom_wrap">
+					<div class="footer_bottom_wrap_img">
+						<img src="./img/sending/1.png" alt="">
+					</div>
+					<div class="footer_bottom_wrap_img">
+						<img src="./img/sending/2.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer_your">
+			<div class="container">
+				<div class="footer_your_wrap">
+					<div class="footer_your_block">
+						<a href="#">Правила использования сертификатов</a>
+						<a href="">Правила проведения маркетинговых акций</a>
+					</div>
+
+					<div class="footer_your_block">
+						<a href="#">Публичная оферта</a>
+						<a href="#">Политика конфиденциальности</a>
+					</div>
+
+					<div class="copyright">
+						<span>© 2007-2024 – «Эролайф» Казань</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+	<script>
+		if ($(window).width() < 991) {
+			$('.menu_catalog_wrap').slick({
+				arrows: false,
+				dots: true,
+				infinite: false,
+				slidesToShow: 5,
+				slidesToScroll: 1,
+				responsive: [
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 4,
+						}
+					},
+				]
+			});
+		}
+	</script>
+
+	<script>
+		var animStart = false, timerEnter = null;
+
+		$(document).on({
+			mouseenter: function () {
+				var path = $(this).find("path");
+				if (animStart = !animStart) {
+					var t = 0;
+					timerEnter = setInterval(function () {
+						path.eq(t).fadeTo(250, 0), setTimeout(function () {
+							path.eq(t).fadeTo(250, 1), t = t === path.length - 1 ? 0 : t + 1
+						}, 1)
+					}, 150)
+				}
+			}, mouseleave: function () {
+				var path = $(this).find("path");
+				animStart = false, clearInterval(timerEnter), setTimeout(function () {
+					path.each(function (path, t) {
+						path < 2 && $(t).fadeTo(150, 0)
+					})
+				}, 1)
+			}
+		}, ".btn-outline")
+	</script>
+
+
+</body>
+</html>
