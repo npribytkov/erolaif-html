@@ -6,16 +6,10 @@
 	<title></title>
 
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="fonts/mulish_/mulish.css">
+	<link href="./libs/slick/slick.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media_style.css">
-
-	<script src="js/jquery-3.7.1.min.js"></script>
-
-	<link href="./libs/slick/slick.css" rel="stylesheet">
-	<script type="text/javascript" src="./libs/slick/slick.min.js"></script>
-
-	<script type="text/javascript" src="js/script.js"></script>
-
 	<link href="./css/font-awesome.min.css" rel="stylesheet">
 </head>
 <body>
@@ -111,258 +105,381 @@
 					<span></span>
 				</div>
 			</div>
-			<ul class="menu_nav">
+			<div class="menu_nav">
 
-				<li class="menu_nav_addr">
-					Нижний Новгород
-				</li>
+				<div class="menu_nav_addr">Нижний Новгород</div>
 
 				<div class="header_search header_search_menu">
 					<input type="text" placeholder="Поиск по сайту">
 					<button class="submit"></button>
 				</div>
 				
-				<li class="menu_nav_tabs">
-					<a href="#" class="active">Каталог</a>
-					<a href="#">Информация</a>
-				</li>
+				<div class="menu_nav_tabs">
+					<a href="#" class="active" data-type="catalog">Каталог</a>
+					<a href="#" data-type="info">Информация</a>
+				</div>
 
+				<div class="menu_nav_top-list show" data-type="catalog">
+					<div class="menu_nav_top" menu-nav="1">
+						<a href="#" class="menu_nav_btn ico1">Распродажа</a>
 
-				<li class="menu_nav_top active" menu-nav="1">
-					<a href="#" class="menu_nav_btn ico1">Распродажа</a>
-
-					<div class="menu_nav_list active" menu-nav="1">
-						<ul>
-							<li>
-								<a href="#"><b>Анальные игрушки</b></a>
-								<a href="#">Анальные пробки</a>
-								<a href="#">Анальные расширители</a>
-								<a href="#">Анальные шарики</a>
-								<a href="#">Массажеры простаты</a>
-							</li>
-							<li>
-								<a href="#"><b>Вакуумные помпы</b></a>
-								<a href="#">Помпы для женщин</a>
-								<a href="#">Помпы для мужчин</a>
-							</li>
-							<li>
-								<a href="#"><b>Вибраторы</b></a>
-								<a href="#">Вибраторы</a>
-								<a href="#">Вибраторы для пар</a>
-								<a href="#">Виброяйца</a>
-								<a href="#">Массажеры Wand</a>
-								<a href="#">Стимуляторы клитора</a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#"><b>Мастурбаторы</b></a>
-								<a href="#">Мастурбаторы</a>
-								<a href="#">Автоматические мастурбаторы</a>
-							</li>
-							<li>
-								<a href="#"><b>Насадки и кольца</b></a>
-								<a href="#">Для двойного проникновения</a>
-								<a href="#">Насадки на пальцы и язык</a>
-								<a href="#">Насадки на член</a>
-								<a href="#">Эрекционные кольца</a>
-							</li>
-							<li>
-								<a href="#"><b>Секс-куклы</b></a>
-								<a href="#">Надувные секс-куклы</a>
-								<a href="#">Real Doll</a>
-							</li>
-							<li>
-								<a href="#"><b>Секс-машины</b></a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#"><b>Страпоны</b></a>
-							</li>
-							<li>
-								<a href="#"><b>Тренажеры интимных мышц</b></a>
-								<a href="#">Тренажеры Кегеля</a>
-								<a href="#">Вагинальные шарики</a>
-							</li>
-							<li>
-								<a href="#"><b>Уход за игрушками</b></a>
-							</li>
-							<li>
-								<a href="#"><b>Фаллоимитаторы</b></a>
-							</li>
-							<li>
-								<a href="#"><b>Фаллопротезы</b></a>
-							</li>
-							<li>
-								<a href="#"><b>Фистинг</b></a>
-							</li>
-						</ul>
-						<ul>
-							<li>
-								<a href="#"><b>Экстендеры</b></a>
-							</li>
-							<li>
-								<a href="#"><b>Электростимуляция</b></a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="1">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Распродажа
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>Анальные игрушки</b></a>
+										<a href="#">Анальные пробки</a>
+										<a href="#">Анальные расширители</a>
+										<a href="#">Анальные шарики</a>
+										<a href="#">Массажеры простаты</a>
+									</li>
+									<li>
+										<a href="#"><b>Вакуумные помпы</b></a>
+										<a href="#">Помпы для женщин</a>
+										<a href="#">Помпы для мужчин</a>
+									</li>
+									<li>
+										<a href="#"><b>Вибраторы</b></a>
+										<a href="#">Вибраторы</a>
+										<a href="#">Вибраторы для пар</a>
+										<a href="#">Виброяйца</a>
+										<a href="#">Массажеры Wand</a>
+										<a href="#">Стимуляторы клитора</a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#"><b>Мастурбаторы</b></a>
+										<a href="#">Мастурбаторы</a>
+										<a href="#">Автоматические мастурбаторы</a>
+									</li>
+									<li>
+										<a href="#"><b>Насадки и кольца</b></a>
+										<a href="#">Для двойного проникновения</a>
+										<a href="#">Насадки на пальцы и язык</a>
+										<a href="#">Насадки на член</a>
+										<a href="#">Эрекционные кольца</a>
+									</li>
+									<li>
+										<a href="#"><b>Секс-куклы</b></a>
+										<a href="#">Надувные секс-куклы</a>
+										<a href="#">Real Doll</a>
+									</li>
+									<li>
+										<a href="#"><b>Секс-машины</b></a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#"><b>Страпоны</b></a>
+									</li>
+									<li>
+										<a href="#"><b>Тренажеры интимных мышц</b></a>
+										<a href="#">Тренажеры Кегеля</a>
+										<a href="#">Вагинальные шарики</a>
+									</li>
+									<li>
+										<a href="#"><b>Уход за игрушками</b></a>
+									</li>
+									<li>
+										<a href="#"><b>Фаллоимитаторы</b></a>
+									</li>
+									<li>
+										<a href="#"><b>Фаллопротезы</b></a>
+									</li>
+									<li>
+										<a href="#"><b>Фистинг</b></a>
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<a href="#"><b>Экстендеры</b></a>
+									</li>
+									<li>
+										<a href="#"><b>Электростимуляция</b></a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="2">
-					<a href="#" class="menu_nav_btn ico2">Новое поступление</a>
+					<div class="menu_nav_top" menu-nav="2">
+						<a href="#" class="menu_nav_btn ico2">Новое поступление</a>
 
-					<div class="menu_nav_list" menu-nav="2">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="2">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Новое поступление
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="3">
-					<a href="#" class="menu_nav_btn ico3">Популярное</a>
+					<div class="menu_nav_top" menu-nav="3">
+						<a href="#" class="menu_nav_btn ico3">Популярное</a>
 
-					<div class="menu_nav_list" menu-nav="3">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="3">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Популярное
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="4">
-					<a href="#" class="menu_nav_btn ico4">Игрушки для секса</a>
+					<div class="menu_nav_top" menu-nav="4">
+						<a href="#" class="menu_nav_btn ico4">Игрушки для секса</a>
 
-					<div class="menu_nav_list" menu-nav="4">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="4">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Игрушки для секса
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="5">
-					<a href="#" class="menu_nav_btn ico5">Эротические подарки</a>
+					<div class="menu_nav_top" menu-nav="5">
+						<a href="#" class="menu_nav_btn ico5">Эротические подарки</a>
 
-					<div class="menu_nav_list" menu-nav="5">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="5">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Эротические подарки
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="6">
-					<a href="#" class="menu_nav_btn ico6">Интимная косметика</a>
+					<div class="menu_nav_top" menu-nav="6">
+						<a href="#" class="menu_nav_btn ico6">Интимная косметика</a>
 
-					<div class="menu_nav_list" menu-nav="6">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="6">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Интимная косметика
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="7">
-					<a href="#" class="menu_nav_btn ico7">BDSM</a>
+					<div class="menu_nav_top" menu-nav="7">
+						<a href="#" class="menu_nav_btn ico7">BDSM</a>
 
-					<div class="menu_nav_list" menu-nav="7">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="7">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								BDSM
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="8">
-					<a href="#" class="menu_nav_btn ico8">Эротическая одежда</a>
+					<div class="menu_nav_top" menu-nav="8">
+						<a href="#" class="menu_nav_btn ico8">Эротическая одежда</a>
 
-					<div class="menu_nav_list" menu-nav="8">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="8">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Эротическая одежда
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="9">
-					<a href="#" class="menu_nav_btn ico9">Возбуждающие препараты</a>
+					<div class="menu_nav_top" menu-nav="9">
+						<a href="#" class="menu_nav_btn ico9">Возбуждающие препараты</a>
 
-					<div class="menu_nav_list" menu-nav="9">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="9">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Возбуждающие препараты
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="10">
-					<a href="#" class="menu_nav_btn ico10">Презервативы</a>
+					<div class="menu_nav_top" menu-nav="10">
+						<a href="#" class="menu_nav_btn ico10">Презервативы</a>
 
-					<div class="menu_nav_list" menu-nav="10">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="10">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Презервативы
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="11">
-					<a href="#" class="menu_nav_btn ico11">Интимная гигиена</a>
+					<div class="menu_nav_top" menu-nav="11">
+						<a href="#" class="menu_nav_btn ico11">Интимная гигиена</a>
 
-					<div class="menu_nav_list" menu-nav="11">
-						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
-						</ul>
+						<div class="menu_nav_list" menu-nav="11">
+							<div class="menu_nav-back js-nav-back">
+								<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+								</svg>
+								Интимная гигиена
+							</div>
+							<div class="menu_sub-menu-list">
+								<ul>
+									<li>
+										<a href="#"><b>item</b></a>
+										<a href="#">item1</a>
+										<a href="#">item2</a>
+										<a href="#">item3</a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</li>
-				<li class="menu_nav_top" menu-nav="12">
+					<div class="menu_nav_top" menu-nav="12">
 					<a href="#" class="menu_nav_btn ico12">Наборы</a>
 
 					<div class="menu_nav_list" menu-nav="12">
+						<div class="menu_nav-back js-nav-back">
+							<svg width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M9.5565 13.2082L3.66422 7.80315L9.5565 2.39813C9.84047 2.13764 10 1.78435 10 1.41596C10 1.04758 9.84047 0.694288 9.5565 0.433803C9.27253 0.173317 8.88739 0.0269775 8.4858 0.0269775C8.08421 0.0269775 7.69906 0.173317 7.4151 0.433803L0.444141 6.82831C0.30335 6.95719 0.191652 7.11028 0.11544 7.27881C0.0392284 7.44734 0 7.62801 0 7.81047C0 7.99292 0.0392284 8.17359 0.11544 8.34212C0.191652 8.51065 0.30335 8.66374 0.444141 8.79263L7.4151 15.1871C7.5556 15.3163 7.72249 15.4187 7.90622 15.4887C8.08994 15.5586 8.28689 15.5945 8.4858 15.5945C8.6847 15.5945 8.88166 15.5586 9.06538 15.4887C9.24911 15.4187 9.416 15.3163 9.5565 15.1871C9.83766 14.9225 9.99501 14.5677 9.99501 14.1982C9.99501 13.8287 9.83766 13.4728 9.5565 13.2082Z" fill="#430315"/>
+							</svg>
+							Наборы
+						</div>
+						<div class="menu_sub-menu-list">
+							<ul>
+								<li>
+									<a href="#"><b>item</b></a>
+									<a href="#">item1</a>
+									<a href="#">item2</a>
+									<a href="#">item3</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				</div>
+				<div class="menu_nav_top-list" data-type="info">
+					<div class="menu_nav_top-info-list">
 						<ul>
-							<li>
-								<a href="#"><b>item</b></a>
-								<a href="#">item1</a>
-								<a href="#">item2</a>
-								<a href="#">item3</a>
-							</li>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Магазины</a></li>
+							<li><a href="#">Контакты</a></li>
+							<li><a href="#">Видео–консультация</a></li>
+							<li><a href="#">Кредит и рассрочка</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Гид по игрушкам</a></li>
+							<li><a href="#">Отзывы</a></li>
+							<li><a href="#">Доставка</a></li>
+							<li><a href="#">Оплата</a></li>
+							<li><a href="#">Анонимность</a></li>
+							<li><a href="#">Вопрос–ответ</a></li>
+							<li><a href="#">Самовывоз</a></li>
+							<li><a href="#">Бонусная программа</a></li>
+							<li><a href="#">Подбор размера</a></li>
+							<li><a href="#">Гарантия и возврат</a></li>
+							<li><a href="#">Накопительная скидка</a></li>
+							<li><a href="#">Промокод</a></li>
+							<li><a href="#">Электронный сертификат</a></li>
+							<li><a href="#">Как сделать заказ</a></li>
+							<li><a href="#">Как оплатить "Долями"</a></li>
 						</ul>
 					</div>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -643,7 +760,7 @@
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -653,7 +770,6 @@
 						<img src="./img/catalog/1.png" alt="">
 						<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 					</div>
-
 					<div class="catalog_block_wrap">
 						<span class="catalog_block_category">Unihorn</span>
 						<span class="catalog_block_rating">4,8</span>
@@ -663,15 +779,19 @@
 						Вибромассажер «Heart Throb» с пульсирующей головкой
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">8 990 ₽</span>
-						<span class="old_price">18 190</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">8 990 ₽</span>
+							<span class="old_price">18 190</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -691,15 +811,19 @@
 						Новогодний комплект «Alimena» (L/XL)
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">4 490 ₽</span>
-						<span class="old_price">5 190</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">4 490 ₽</span>
+							<span class="old_price">5 190</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -719,15 +843,19 @@
 						Мастурбатор вагина-анус «Misha Maver»
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">4 590 ₽</span>
-						<span class="old_price">5 190</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">4 490 ₽</span>
+							<span class="old_price">5 190</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -749,15 +877,19 @@
 						Мастурбатор вагина-анус «Lola Taylor»
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">4 590 ₽</span>
-						<span class="old_price">5 190</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">4 490 ₽</span>
+							<span class="old_price">5 190</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -778,16 +910,19 @@
 					<div class="catalog_block_title">
 						Очищающий спрей «Shunga Gentle Cleaner», 115 мл
 					</div>
-
-					<div class="catalog_block_price">
-						<span class="new_price">1 890 ₽</span>
-						<span class="old_price">18 190</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">1 890 ₽</span>
+							<span class="old_price">18 190</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -809,14 +944,18 @@
 						Новогодние купоны для пар «Загадай желание»
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">390 ₽</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">390 ₽</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -838,15 +977,19 @@
 						Вибромассажер «Bean Blossom» со стимуляцией
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">8 990 ₽</span>
-						<span class="old_price">18 190</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">8 990 ₽</span>
+							<span class="old_price">18 190</span>
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -868,14 +1011,19 @@
 						Вибромассажер «Wild Spirit» с длинным язычком
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">8 990 ₽</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">8 990 ₽</span>
+
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -897,14 +1045,19 @@
 						Гиперреалистичная кукла «Sex Doll Lea» с голосовым...
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">8 990 ₽</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">8 990 ₽</span>
+
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 				<a href="#" class="catalog_block">
 					<div class="catalog_block_head">
 						<span class="catalog_block_new">NEW</span>
-						<span class="catalog_block_profit">Рассрочка 0-0-6</span>
+						<span class="catalog_block_profit"><span class="catalog_block_profit_text">Рассрочка</span> 0-0-6</span>
 						<span class="catalog_block_benefit">-15%</span>
 
 						<button class="catalog_fav"></button>
@@ -926,9 +1079,14 @@
 						Возбуждающее средство для мужчин «LoveBoost Extreme»...
 					</div>
 
-					<div class="catalog_block_price">
-						<span class="new_price">8 990 ₽</span>
+					<div class="catalog_block_price_block">
+						<div class="catalog_block_price">
+							<span class="new_price">8 990 ₽</span>
+
+						</div>
+						<button class="catalog_fav-mob catalog_fav"></button>
 					</div>
+					<button class="btn catalog_cart"><span>ДОБАВИТЬ В КОРЗИНУ</span></button>
 				</a>
 			</div>
 
@@ -1109,19 +1267,37 @@
 				<div class="footer_contacts">
 					<a href="tel:" class="phone">8 (800) 700 83 23</a>
 					<a href="mailto:" class="mail">info@erolaif.ru</a>
-					
-					<div class="footer_contacts_social">
-						<span>Мессенджеры:</span>
-						<a href="#" class="watsapp"></a>
-						<a href="#" class="viber"></a>
-						<a href="#" class="telegram"></a>
-					</div>
 
-					<div class="footer_contacts_social">
-						<span>Социальные сети:</span>
-						<a href="#" class="vk"></a>
-						<a href="#" class="instagram"></a>
-						<a href="#" class="youtube"></a>
+					<div class="footer_contacts_social-block">
+						<div class="footer_contacts_social">
+							<span>Мессенджеры:</span>
+							<div class="footer_contacts_social-list">
+								<div class="footer_contacts_social-item">
+									<a href="#" class="watsapp"></a>
+								</div>
+								<div class="footer_contacts_social-item">
+									<a href="#" class="viber"></a>
+								</div>
+								<div class="footer_contacts_social-item">
+									<a href="#" class="telegram"></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="footer_contacts_social">
+							<span>Социальные сети:</span>
+							<div class="footer_contacts_social-list">
+								<div class="footer_contacts_social-item">
+									<a href="#" class="vk"></a>
+								</div>
+								<div class="footer_contacts_social-item">
+									<a href="#" class="instagram"></a>
+								</div>
+								<div class="footer_contacts_social-item">
+									<a href="#" class="youtube"></a>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 				
@@ -1216,26 +1392,65 @@
 		</div>
 	</footer>
 
+	<div class="mobile-bottom-menu">
+		<div class="mobile-bottom-menu__list">
+			<div class="mobile-bottom-menu__item">
+				<a href="#" class="mobile-bottom-menu__wrap">
+					<div class="mobile-bottom-menu__ico">
+						<svg width="20" height="17" viewBox="0 0 20 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M10 2.69L15 7.19V15H13V9H7V15H5V7.19L10 2.69ZM10 0L0 9H3V17H9V11H11V17H17V9H20L10 0Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="mobile-bottom-menu__name">Главная</div>
+				</a>
+			</div>
+			<div class="mobile-bottom-menu__item">
+				<a href="#" class="mobile-bottom-menu__wrap js-open-catalog">
+					<div class="mobile-bottom-menu__ico">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M5.14369 6.85698H18.8587V8.57098H5.14369V6.85698ZM6.85869 3.42798H17.1437V5.14198H6.85869V3.42798ZM18.8587 10.285H5.14369C4.68951 10.2863 4.25432 10.4673 3.93316 10.7885C3.61201 11.1096 3.43101 11.5448 3.42969 11.999V18.856C3.43101 19.3102 3.61201 19.7453 3.93316 20.0665C4.25432 20.3877 4.68951 20.5687 5.14369 20.57H18.8587C19.3129 20.5687 19.7481 20.3877 20.0692 20.0665C20.3904 19.7453 20.5714 19.3102 20.5727 18.856V11.999C20.5714 11.5448 20.3904 11.1096 20.0692 10.7885C19.7481 10.4673 19.3129 10.2863 18.8587 10.285ZM18.8587 18.856H5.14369V11.999H18.8587V18.856Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="mobile-bottom-menu__name">Каталог</div>
+				</a>
+			</div>
+			<div class="mobile-bottom-menu__item">
+				<a href="#" class="mobile-bottom-menu__wrap">
+					<div class="mobile-bottom-menu__ico">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.3634 12.956C16.7062 12.9571 17.0429 12.866 17.3383 12.6922C17.6337 12.5183 17.8769 12.2682 18.0424 11.968L21.4784 5.74002C21.5591 5.59456 21.6005 5.43053 21.5985 5.26417C21.5964 5.09781 21.551 4.93486 21.4666 4.79144C21.3823 4.64802 21.262 4.52909 21.1176 4.44642C20.9732 4.36374 20.8098 4.32017 20.6434 4.32002H6.44039L5.53839 2.40002H2.40039V4.31902H4.31939L7.77439 11.6L6.47439 13.942C6.31352 14.2344 6.23151 14.5636 6.23641 14.8973C6.24131 15.2309 6.33296 15.5576 6.50234 15.8451C6.67173 16.1326 6.91302 16.3711 7.2025 16.5372C7.49198 16.7032 7.81968 16.791 8.15339 16.792H19.6744V14.875H8.15839L9.21439 12.956H16.3634ZM7.35239 6.23902H19.0124L16.3634 11.039H9.62639L7.35239 6.23902ZM8.15839 17.755C7.77885 17.755 7.40783 17.8676 7.09225 18.0784C6.77667 18.2893 6.53071 18.589 6.38547 18.9397C6.24022 19.2903 6.20222 19.6762 6.27626 20.0484C6.35031 20.4207 6.53308 20.7626 6.80145 21.031C7.06983 21.2993 7.41176 21.4821 7.78401 21.5562C8.15626 21.6302 8.54211 21.5922 8.89276 21.4469C9.24341 21.3017 9.54312 21.0557 9.75398 20.7402C9.96484 20.4246 10.0774 20.0536 10.0774 19.674C10.0778 19.4219 10.0284 19.1721 9.93214 18.939C9.83585 18.706 9.69453 18.4942 9.51627 18.3159C9.33801 18.1375 9.12631 17.9961 8.8933 17.8997C8.6603 17.8033 8.41056 17.7548 8.15839 17.755ZM17.7584 17.755C17.3788 17.755 17.0078 17.8676 16.6923 18.0784C16.3767 18.2893 16.1307 18.589 15.9855 18.9397C15.8402 19.2903 15.8022 19.6762 15.8763 20.0484C15.9503 20.4207 16.1331 20.7626 16.4015 21.031C16.6698 21.2993 17.0118 21.4821 17.384 21.5562C17.7563 21.6302 18.1421 21.5922 18.4928 21.4469C18.8434 21.3017 19.1431 21.0557 19.354 20.7402C19.5648 20.4246 19.6774 20.0536 19.6774 19.674C19.6778 19.4215 19.6283 19.1714 19.5318 18.9381C19.4352 18.7048 19.2935 18.4928 19.1149 18.3144C18.9362 18.136 18.724 17.9947 18.4905 17.8985C18.2571 17.8023 18.0069 17.7532 17.7544 17.754L17.7584 17.755Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="mobile-bottom-menu__name">Корзина</div>
+				</a>
+			</div>
+			<div class="mobile-bottom-menu__item">
+				<a href="#" class="mobile-bottom-menu__wrap">
+					<div class="mobile-bottom-menu__ico">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M16.5003 3.00002C15.6444 3.00654 14.7999 3.19647 14.0236 3.557C13.2473 3.91753 12.5574 4.44028 12.0003 5.09002C11.4431 4.44028 10.7532 3.91753 9.97692 3.557C9.20066 3.19647 8.35613 3.00654 7.50026 3.00002C6.77602 2.99293 6.05764 3.13036 5.38715 3.40425C4.71666 3.67815 4.10753 4.08301 3.59539 4.59515C3.08325 5.10728 2.67839 5.71642 2.4045 6.38691C2.1306 7.0574 1.99318 7.77578 2.00026 8.50002C2.00026 12.28 5.40026 15.36 10.5503 20.04L12.0003 21.35L13.4503 20.03C18.6003 15.36 22.0003 12.28 22.0003 8.50002C22.0073 7.77578 21.8699 7.0574 21.596 6.38691C21.3221 5.71642 20.9173 5.10728 20.4051 4.59515C19.893 4.08301 19.2839 3.67815 18.6134 3.40425C17.9429 3.13036 17.2245 2.99293 16.5003 3.00002ZM12.1003 18.55L12.0003 18.65L11.9003 18.55C7.14026 14.24 4.00026 11.39 4.00026 8.50002C3.98902 8.03732 4.07187 7.57716 4.24378 7.14744C4.41569 6.71772 4.67309 6.32739 5.00036 6.00012C5.32763 5.67285 5.71796 5.41545 6.14768 5.24354C6.5774 5.07162 7.03756 4.98878 7.50026 5.00002C8.26033 5.00371 9.00284 5.22892 9.63691 5.64808C10.271 6.06723 10.7691 6.66215 11.0703 7.36002H12.9403C13.2382 6.66187 13.7342 6.06631 14.3668 5.64689C14.9995 5.22748 15.7412 5.00259 16.5003 5.00002C16.963 4.98878 17.4231 5.07162 17.8528 5.24354C18.2826 5.41545 18.6729 5.67285 19.0002 6.00012C19.3274 6.32739 19.5848 6.71772 19.7567 7.14744C19.9287 7.57716 20.0115 8.03732 20.0003 8.50002C20.0003 11.39 16.8603 14.24 12.1003 18.55Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="mobile-bottom-menu__name">Избранное</div>
+				</a>
+			</div>
+			<div class="mobile-bottom-menu__item">
+				<a href="#" class="mobile-bottom-menu__wrap">
+					<div class="mobile-bottom-menu__ico">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M12.001 2.66699C10.1551 2.66699 8.35064 3.21436 6.81584 4.23989C5.28103 5.26541 4.0848 6.72302 3.37841 8.42841C2.67201 10.1338 2.48719 12.0103 2.8473 13.8208C3.20742 15.6312 4.0963 17.2942 5.40155 18.5994C6.70679 19.9047 8.36977 20.7935 10.1802 21.1537C11.9906 21.5138 13.8672 21.329 15.5726 20.6226C17.2779 19.9162 18.7356 18.7199 19.7611 17.1851C20.7866 15.6503 21.334 13.8459 21.334 12C21.3329 9.52505 20.3493 7.15178 18.5992 5.40174C16.8492 3.65169 14.4759 2.66805 12.001 2.66699ZM7.40097 17.862C7.80097 17.022 10.248 16.201 12.001 16.201C13.754 16.201 16.21 17.022 16.601 17.862C15.2926 18.9003 13.6713 19.4654 12.001 19.4654C10.3306 19.4654 8.70939 18.9003 7.40097 17.862ZM17.938 16.509C16.603 14.885 13.365 14.334 12.002 14.334C10.639 14.334 7.40197 14.885 6.06597 16.509C5.2215 15.4024 4.70317 14.0818 4.56949 12.6962C4.4358 11.3106 4.69209 9.91528 5.30941 8.66765C5.92673 7.42001 6.88051 6.36978 8.06309 5.63549C9.24568 4.9012 10.61 4.51209 12.002 4.51209C13.394 4.51209 14.7583 4.9012 15.9409 5.63549C17.1234 6.36978 18.0772 7.42001 18.6945 8.66765C19.3119 9.91528 19.5681 11.3106 19.4345 12.6962C19.3008 14.0818 18.7824 15.4024 17.938 16.509ZM12.001 6.39999C11.3548 6.39999 10.7232 6.5916 10.1859 6.95058C9.64867 7.30956 9.22993 7.8198 8.98266 8.41677C8.73539 9.01373 8.67069 9.67062 8.79675 10.3044C8.92281 10.9381 9.23396 11.5202 9.69086 11.9771C10.1478 12.434 10.7299 12.7452 11.3636 12.8712C11.9973 12.9973 12.6542 12.9326 13.2512 12.6853C13.8482 12.438 14.3584 12.0193 14.7174 11.482C15.0764 10.9448 15.268 10.3131 15.268 9.66699C15.2692 9.23763 15.1855 8.81227 15.0217 8.41536C14.8579 8.01845 14.6173 7.65783 14.3137 7.35423C14.0101 7.05062 13.6495 6.81002 13.2526 6.64626C12.8557 6.4825 12.4303 6.3988 12.001 6.39999ZM12.001 11.067C11.7241 11.067 11.4534 10.9849 11.2232 10.831C10.9929 10.6772 10.8135 10.4586 10.7075 10.2027C10.6016 9.94693 10.5739 9.66544 10.6279 9.39387C10.6819 9.12229 10.8152 8.87284 11.011 8.67704C11.2068 8.48125 11.4563 8.34791 11.7278 8.29389C11.9994 8.23987 12.2809 8.2676 12.5367 8.37356C12.7925 8.47952 13.0112 8.65896 13.165 8.88919C13.3189 9.11942 13.401 9.3901 13.401 9.66699C13.401 9.85084 13.3648 10.0329 13.2944 10.2027C13.224 10.3726 13.1209 10.5269 12.9909 10.6569C12.8609 10.7869 12.7066 10.8901 12.5367 10.9604C12.3669 11.0308 12.1848 11.067 12.001 11.067Z" fill="white"/>
+						</svg>
+					</div>
+					<div class="mobile-bottom-menu__name">Профиль</div>
+				</a>
+			</div>
+		</div>
+	</div>
 
-	<script>
-		if ($(window).width() < 991) {
-			$('.menu_catalog_wrap').slick({
-				arrows: false,
-				dots: true,
-				infinite: false,
-				slidesToShow: 5,
-				slidesToScroll: 1,
-				responsive: [
-					{
-						breakpoint: 768,
-						settings: {
-							slidesToShow: 4,
-						}
-					},
-				]
-			});
-		}
-	</script>
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="/libs/slick/slick.min.js"></script>
+	<script src="js/script.js"></script>
+
 
 	<script>
 		var animStart = false, timerEnter = null;

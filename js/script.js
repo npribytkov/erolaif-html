@@ -146,15 +146,15 @@ $(document).ready(function () {
     //     }
     // });
 
-    $(".menu_nav").mCustomScrollbar({
-        axis: "y",              // вертикальный скролл
-        theme: "rounded-dark",  // тема
-        scrollInertia: "280",   // продолжительность прокрутки, значение в миллисекундах
-        setHeight: "100%",      // высота блока (переписывает CSS)
-        mouseWheel: {
-            deltaFactor: 100    // кол-во пикселей на одну прокрутку колёсика мыши
-        }
-    });
+    // $(".menu_nav").mCustomScrollbar({
+    //     axis: "y",              // вертикальный скролл
+    //     theme: "rounded-dark",  // тема
+    //     scrollInertia: "280",   // продолжительность прокрутки, значение в миллисекундах
+    //     setHeight: "100%",      // высота блока (переписывает CSS)
+    //     mouseWheel: {
+    //         deltaFactor: 100    // кол-во пикселей на одну прокрутку колёсика мыши
+    //     }
+    // });
 
     /* product gallery */
 
@@ -229,4 +229,22 @@ $(document).ready(function () {
     InitStickySideBar();
 
 
+    $(document).on('click', '.js-open-catalog', function (){
+        $(this).toggleClass('active');
+        $('.menu_wrapper').toggleClass('active');
+    });
+
+    $(document).on('click', '.js-nav-back', function (){
+        $(this).parents('.menu_nav_list').removeClass('active');
+        $(this).parents('.menu_nav_top').removeClass('active');
+    })
+    $(document).on('click', '.menu_nav_tabs a', function (){
+        var type = $(this).data('type');
+        if (type) {
+            $('.menu_nav_tabs a.active').removeClass('active');
+            $('.menu_nav_top-list.show').removeClass('show');
+            $(this).addClass('active');
+            $('.menu_nav_top-list[data-type="' + type +'"]').addClass('show');
+        }
+    })
 })

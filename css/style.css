@@ -310,6 +310,15 @@ header.fixed .menu_wrap {
 
 .menu_catalog {
   padding-top: 120px;
+
+}
+.menu_catalog{
+  overflow: hidden;
+  overflow-x: auto;
+}
+
+.menu_catalog::-webkit-scrollbar {
+  display: none;
 }
 .menu_catalog_wrap {
   display: flex;
@@ -385,6 +394,7 @@ header.fixed .menu_wrap {
   z-index: 4;
 }
 
+.menu_nav_top-list,
 .menu_nav {
   position: relative;
   display: flex;
@@ -1020,8 +1030,10 @@ header.fixed .menu_wrap {
   overflow: hidden;
 }
 .catalog_block_img img {
-  width: 100%;
   transition: 0.75s cubic-bezier(0.76, 0, 0.24, 1);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .catalog_block .catalog_cart {
@@ -1072,9 +1084,8 @@ header.fixed .menu_wrap {
 }
 
 .catalog_block_profit {
-  display: flex;
-  align-items: center;
   height: 22px;
+  line-height: 22px;
   padding: 0 12px;
   background: #AC4F98;
   border-radius: 6px;
@@ -1441,18 +1452,22 @@ header.fixed .menu_wrap {
 
 .footer_contacts_social {
   margin-top: 24px;
+}
+.footer_contacts_social-list{
   display: flex;
-  flex-wrap: wrap;
-  row-gap: 6px;
-  column-gap: 16px;
+  margin: 0 -8px;
+}
+.footer_contacts_social-item{
+  padding: 0 8px;
 }
 .footer_contacts_social span {
   display: block;
-  width: 100%;
   font-size: 14px;
   font-weight: 400;
   color: #8E7D82;
+  margin-bottom: 6px;
 }
+
 
 .footer_contacts_social a {
   position: relative;
@@ -2911,4 +2926,7 @@ header.fixed .menu_wrap {
 .share-tooltiped:hover .share-tooltip {
   opacity: 1;
   pointer-events: all;
+}
+.mobile-bottom-menu{
+  display: none;
 }
