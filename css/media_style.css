@@ -578,6 +578,54 @@
         line-height: 35px;
         color: #430315;
     }
+
+    .catalog_fav{
+        display: none;
+    }
+    .catalog_fav-mob{
+        display: block;
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 19px;
+    }
+    .catalog_block_price_block{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 11px;
+    }
+    .catalog_block_img .catalog_cart{
+        display: none;
+    }
+    .catalog_block .catalog_cart{
+        opacity: 1;
+        transform: none;
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+    }
+    .catalog_block:hover .catalog_cart{
+        transform: none;
+    }
+    .catalog_block .catalog_cart.catalog_cart-mob{
+        display: block;
+    }
+
+    .catalog_block .catalog_cart:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 20px;
+        height: 20px;
+        transform: translate(-50%, -50%);
+        background: url(../img/catalog_cart_ico.svg) 50% 50% no-repeat;
+    }
+    .catalog_block .catalog_cart span {
+        display: none;
+    }
 }
 
 
@@ -1071,50 +1119,7 @@
     .catalog_wraper{
         margin-top: 17px;
     }
-    .catalog_fav{
-        display: none;
-    }
-    .catalog_fav-mob{
-        display: block;
-        position: relative;
-        top: auto;
-        right: auto;
-        width: 19px;
-    }
-    .catalog_block_price_block{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 11px;
-    }
-    .catalog_block_img .catalog_cart{
-        display: none;
-    }
-    .catalog_block .catalog_cart{
-        opacity: 1;
-        transform: none;
-        position: relative;
-        top: auto;
-        left: auto;
-        width: 100%;
-    }
-    .catalog_block:hover .catalog_cart{
-        transform: none;
-    }
 
-    .catalog_block .catalog_cart:before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 20px;
-        height: 20px;
-        transform: translate(-50%, -50%);
-        background: url(../img/catalog_cart_ico.svg) 50% 50% no-repeat;
-    }
-    .catalog_block .catalog_cart span {
-        display: none;
-    }
 
     .brands_item {
         width: 48%;
@@ -1136,12 +1141,7 @@
     .catalog_wraper{
         row-gap: 22px;
     }
-    .catalog_block_title{
-        min-height: 48px;
-    }
-    .catalog_block_category{
-        min-height: 28px;
-    }
+
     .catalog .all_news{
         display: none;
     }
