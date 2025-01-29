@@ -1,10 +1,13 @@
 $(document).ready(function () {
     /* меню ***********************************/
 
-    $(".menu_mob_btn").click(function () {
-        $(this).toggleClass("active");
-        $(".menu_wrap").toggleClass("active");
-    });
+
+    $('.menu_nav_top').hover(function () {
+        $('.menu_nav_top').removeClass('active');
+        $('.menu_nav_list').removeClass('active');
+        $(this).addClass('active');
+        $(this).find('.menu_nav_list').addClass('active');
+    })
 
     $(".menu_mob_close").click(function () {
         $(".menu_wrap").toggleClass("active");
