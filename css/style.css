@@ -169,8 +169,8 @@ header.fixed .menu_wrap {
 
 .menu_btn_close {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 12px;
+  right: 10px;
   width: 45px;
   height: 45px;
   justify-content: center;
@@ -1672,6 +1672,7 @@ header.fixed .menu_wrap {
   padding: 8px 0.4vw;
   border: 1px solid #F6E2E6;
   border-radius: 20px;
+  transition: all 0.2s linear;
 }
 
 .age_catalog_category_img {
@@ -1699,8 +1700,11 @@ header.fixed .menu_wrap {
   transition: all 0.2s linear;
   color: #EF3167;
 }
+.page_catalog_category_block:hover{
+  border-color: #EF3167;
+}
 
-/**************************************************************************************/
+  /**************************************************************************************/
 
 .page_catalog_wrapper {
   display: flex;
@@ -2949,5 +2953,8 @@ header.fixed .menu_wrap {
 }
 .menu_nav-back,
 .menu_nav .category2{
+  display: none;
+}
+.page_catalog_mob_filter{
   display: none;
 }
