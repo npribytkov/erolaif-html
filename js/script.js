@@ -129,11 +129,6 @@ $(".page_catalog_sorting_item").click(function () {
     $('.page_catalog_sorting_list').toggleClass('active');
 });
 
-$(".page_products_payments_btn").click(function () {
-    $(this).toggleClass('active');
-    $('.page_products_payments_list').toggleClass('active');
-});
-
 /* product gallery */
 
 $('.products_gallery').slick({
@@ -186,8 +181,9 @@ $('.products_related_wrap').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false,
             }
         }
     ]
