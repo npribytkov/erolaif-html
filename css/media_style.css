@@ -1055,8 +1055,12 @@
     .products_related_wrap .catalog_block{
         margin: 0 7px;
     }
-    .products_gallery .products_gallery_img{
-
+    .page_products_payments_btn {
+        font-size: 14px;
+        padding: 0 11px;
+    }
+    .page_products_payments_btn img {
+        width: 71px;
     }
 }
 
