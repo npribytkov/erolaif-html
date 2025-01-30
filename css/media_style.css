@@ -1410,4 +1410,14 @@
     .footer_bottom_wrap{
         column-gap: 8px;
     }
+    .page_products_payments_btn{
+        padding: 0 10px;
+    }
+    .page_products_payments_btn:after{
+        right: 8px;
+    }
+    .cart2,
+    .cart1{
+        padding: 0 8px;
+    }
 }
