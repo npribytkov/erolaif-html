@@ -1,4 +1,5 @@
 $('.menu_nav_top').hover(function () {
+    if($(window).width() <= 991) return;
     $('.menu_nav_top').removeClass('active');
     $('.menu_nav_list').removeClass('active');
     $(this).addClass('active');
