@@ -2657,6 +2657,14 @@ header.fixed .menu_wrap {
   height: 44px;
   font-size: 14px;
 }
+.cart1:before {
+  content: '';
+  position: relative;
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/cart1_ico.svg) no-repeat;
+}
 
 .cart2 {
   position: relative;

@@ -551,6 +551,8 @@
     }
     .menu_nav {
         margin-top: 0;
+        margin-right: -15px;
+        padding-right: 15px;
     }
 
     .menu_nav_top:before {

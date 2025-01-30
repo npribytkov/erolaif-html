@@ -293,3 +293,15 @@ $(document).on('click', '.js-close-catalog_filter', function () {
     $('.page_catalog_left').removeClass('show');
     $('.page_catalog_filter').removeClass('show');
 })
+
+$(document).mouseup( function(e){ // событие клика по веб-документу
+    var block = $( ".menu_wrapper.active" ),
+        btnCatalog = $('.menu_btn'),
+        btnCatalogName = $('.menu_btn *');
+    if ( !block.is(e.target) && !btnCatalog.is(e.target) && !btnCatalogName.is(e.target)
+        && block.has(e.target).length === 0 ) {
+        console.log('+++')
+        block.removeClass('active');
+        btnCatalog.removeClass('active');
+    }
+});
