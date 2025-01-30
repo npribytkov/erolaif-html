@@ -667,7 +667,7 @@ header.fixed .menu_wrap {
   left: 0;
   width: 51%;
   height: 100%;
-  background: url(../img/banner/banner_bg.png) 100% 50% no-repeat;
+  background: url(../img/slider/bg.png) 100% 50% no-repeat;
 
 }
 .banner .banner_img {
@@ -1120,6 +1120,7 @@ header.fixed .menu_wrap {
   height: 18px;
   background: url(../img/catalog_fav.svg) 50% 50% no-repeat;
   cursor: pointer;
+  background-size: contain;
 }
 .catalog_fav-mob{
   display: none;

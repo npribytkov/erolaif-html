@@ -176,15 +176,13 @@ $('.products_related_wrap').slick({
             settings: {
                 slidesToShow: 3,
                 slidesToScroll: 1,
-                arrows: false,
             }
         },
         {
-            breakpoint: 480,
+            breakpoint: 521,
             settings: {
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                arrows: false,
             }
         }
     ]
@@ -301,7 +299,6 @@ $(document).mouseup( function(e){ // событие клика по веб-до�
         btnCatalogName = $('.menu_btn *');
     if ( !block.is(e.target) && !btnCatalog.is(e.target) && !btnCatalogName.is(e.target)
         && block.has(e.target).length === 0 ) {
-        console.log('+++')
         block.removeClass('active');
         btnCatalog.removeClass('active');
     }
