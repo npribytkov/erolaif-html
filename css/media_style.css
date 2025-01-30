@@ -765,6 +765,7 @@
 
     .page_products_right {
         order: 3;
+        min-width: auto;
     }
     .catalog_block_img {
         height: 194px;
@@ -1398,5 +1399,15 @@
     }
     .footer_contacts_social-list{
         margin: 0 -5px;
+    }
+}
+@media (max-width: 370px) {
+    .footer_bottom_wrap{
+        column-gap: 12px;
+    }
+}
+@media (max-width: 340px) {
+    .footer_bottom_wrap{
+        column-gap: 8px;
     }
 }
