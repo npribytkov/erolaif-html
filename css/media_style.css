@@ -203,6 +203,9 @@
     .catalog_block_profit_text{
         display: none;
     }
+    .catalog_block_profit{
+        line-height: 22px;
+    }
     .offers2 {
         margin-top: 38px;
     }
