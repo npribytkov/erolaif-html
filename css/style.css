@@ -1760,7 +1760,6 @@ header.fixed .menu_wrap {
   border-radius: 10px;
   min-height: 37px;
   font-size: 14px;
-  font-weight: 600;
   cursor: pointer;
 }
 .page_catalog_nav_btn-name{
@@ -1859,7 +1858,6 @@ header.fixed .menu_wrap {
   justify-content: space-between;
   height: 24px;
   font-size: 14px;
-  font-weight: 700;
   cursor: pointer;
 }
 .page_catalog_filter_arrow {
